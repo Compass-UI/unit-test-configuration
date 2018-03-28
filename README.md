@@ -34,6 +34,25 @@ single run
 
 `$ karma start karma.conf.js  --log-level debug --single-run`
 
+## PhantomJS
+
+`>npm i phantomjs`
+
+### Karma Launchers
+
+Depending on what you will be using, install the following:
+`npm install --save-dev karma-phantomjs-launcher`
+`npm install --save-dev karma-ie-launcher`
+`npm install --save-dev karma-chrome-launcher`
+
+## Browserify
+
+`yarn add browserify`
+Or,
+`$ npm i browserify`
+
+### junit-reporter
+`yarn add karma-junit-reporter`
 ## Gulp
 
 `npm i gulp`

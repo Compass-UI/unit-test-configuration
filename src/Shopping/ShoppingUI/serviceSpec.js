@@ -1,5 +1,12 @@
-describe('First Unit Test', function(){
-    it('Should pass', function(){
-        expect(true).toBe(true)
+
+describe('Is function called', function(){
+    it('[Function] should be called', function(){
+        ccAero = {
+            doLogin: function(){
+            }
+        }
+        spyOn(ccAero, "doLogin");
+        ccAero.doLogin();
+        expect(ccAero.doLogin).toHaveBeenCalled();
     })
 })

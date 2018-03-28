@@ -17,4 +17,4 @@ gulp.task('open', function(){
   .pipe(open());
 });
 
-gulp.task('default', ['jasmine', 'open']);
+gulp.task('test', ['jasmine', 'open']);

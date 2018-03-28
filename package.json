@@ -26,7 +26,8 @@
     "watchify": "^3.11.0"
   },
   "scripts": {
-    "test": "karma start karma.conf.js --log-level debug"
+    "test": "gulp test",
+    "test:karma": "karma start karma.conf.js --log-level debug"
   },
   "repository": {
     "type": "git",

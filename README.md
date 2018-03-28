@@ -18,6 +18,7 @@ Or,
 `yarn add karma-requirejs -D`
 
 `npm i karma-chrome-launcher karma-jasmine  karma-requirejs -D`
+`C:\Users\v738110\Compass\UnitTests\unit-test-configuration>npm i karma-browserify`
 
 ## RequireJS
 
@@ -50,12 +51,19 @@ Depending on what you will be using, install the following:
 `yarn add browserify`
 Or,
 `$ npm i browserify`
+`C:\Users\v738110\Compass\UnitTests\unit-test-configuration>npm i karma-browserify`
 
 ### junit-reporter
 `yarn add karma-junit-reporter`
+
+### Watchify
+`npm install --save-dev watchify`
+
 ## Gulp
 
 `npm i gulp`
 `npm i gulp-watch -D    `
 
 `gulp-jasmine-browser`
+
+`C:\Users\v738110\Compass\UnitTests\unit-test-configuration>npm i gulp-open`

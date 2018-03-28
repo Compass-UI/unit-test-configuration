@@ -5,7 +5,9 @@
   "main": "karma.conf.js",
   "dependencies": {
     "gulp": "^3.9.1",
+    "gulp-open": "^3.0.1",
     "karma": "^2.0.0",
+    "karma-browserify": "^5.2.0",
     "karma-jasmine": "^1.1.1",
     "karma-junit-reporter": "^1.2.0",
     "karma-requirejs": "^1.1.0",
@@ -20,7 +22,8 @@
     "jasmine-core": "^3.1.0",
     "karma-chrome-launcher": "^2.2.0",
     "karma-ie-launcher": "^1.0.0",
-    "karma-phantomjs-launcher": "^1.0.4"
+    "karma-phantomjs-launcher": "^1.0.4",
+    "watchify": "^3.11.0"
   },
   "scripts": {
     "test": "karma start karma.conf.js --log-level debug"

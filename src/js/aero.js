@@ -1,6 +1,6 @@
 define(
     [
-      "./jquery"
+      "jquery", "require"
     ],
     function($) {
       "use strict";

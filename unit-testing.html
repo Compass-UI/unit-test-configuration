@@ -12,21 +12,48 @@
         .highlight{
             background-color: yellow
         }
+        .container{
+            margin-left: 10px;
+            align-content: center;
+            margin-top: 5px;
+            border: solid 1px lightblue;
+            border-radius: 15px;
+            padding: 50px;
+        }
+        .good{
+            color: green
+        }
+        
+        .bad{
+            color: red
+        }
     </style>
 </head>
-<body>
+<body class="container">
     
     <h1>Jasmine</h1>
     <a href="https://jasmine.github.io/pages/getting_started.html" target="_blank">Jasmine</a>
 
-    <h1>Good Unit Tests</h1>
-    <ol>
+    <h2>Unit Tests - <span class="good">Good</span></h2>
+    <ol class="good">
         <li>Fast</li>
         <li>Simple</li>
         <li>Easy to read</li>
         <li>Easy to understand</li>
+        <li>Tests one and only one functionality</li>
     </ol>
-    <h2>Please write Good Unit Tests</h2>
+
+    <h2>Unit Tests - <span class="bad">Bad</span></h2>
+    <ol class="bad">
+        <li>Slow</li>
+        <li>Complex</li>
+        <li>Hard to read</li>
+        <li>Hard to understand</li>
+        <li>Tests multiple things</li>
+        <li>Complex branching and looping in tests</li>
+        
+    </ol>
+    <h2>Please write <span class="good">Good</span> Unit Tests!</h2>
     
     <h1 class="unit-tests">See your tests</h1>
     <a class="highlight" href="http://localhost:8888" target="_blank">http://localhost:8888</a>

@@ -11,6 +11,7 @@
     "karma-jasmine": "^1.1.1",
     "karma-junit-reporter": "^1.2.0",
     "karma-requirejs": "^1.1.0",
+    "karma-systemjs": "^0.16.0",
     "phantomjs": "^2.1.7",
     "requirejs": "^2.3.5"
   },
@@ -23,11 +24,14 @@
     "karma-chrome-launcher": "^2.2.0",
     "karma-ie-launcher": "^1.0.0",
     "karma-phantomjs-launcher": "^1.0.4",
+    "systemjs": "^0.21.0",
+    "traceur": "0.0.111",
     "watchify": "^3.11.0"
   },
   "scripts": {
     "test": "gulp test",
-    "test:karma": "karma start karma.conf.js --log-level debug"
+    "test:karma": "karma start karma.conf.js --log-level debug",
+    "test:headless": "gulp headless"
   },
   "repository": {
     "type": "git",

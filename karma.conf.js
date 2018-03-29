@@ -76,6 +76,12 @@ module.exports = function(config) {
     },
 
 
+    plugins: [
+      require('karma-systemjs'),
+      require('karma-jasmine'),
+    ],
+  
+    frameworks: ['systemjs', 'jasmine'],
 
     // Continuous Integration mode
     // if true, Karma captures browsers, runs the tests and exits

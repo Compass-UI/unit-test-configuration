@@ -1,3 +1,11 @@
+# How to run unit tests
+Simply typs
+`npm test`
+
+Once you get comfortable with Unit Testing, browsers refreshes and opening may be time consuming
+You can run Jasmine in headless mode - without opening a brwoser:
+`npm run test:headless`
+
 # Installation
 ## RUN THESE COMMANDS AS ADMINISTRATOR OR YOU MAY FACE MULTIPLE ISSUES:
 
@@ -37,7 +45,8 @@ single run
 
 ## PhantomJS
 
-`>npm i phantomjs`
+`npm i phantomjs`
+[http://phantomjs.org](http://phantomjs.org)
 
 ### Karma Launchers
 
@@ -67,3 +76,15 @@ Or,
 `gulp-jasmine-browser`
 
 `C:\Users\v738110\Compass\UnitTests\unit-test-configuration>npm i gulp-open`
+[gulp-jasmine-browser](https://github.com/jasmine/gulp-jasmine-browser)
+
+## SystemJS
+
+`  npm install systemjs --save-dev`
+
+`npm i karma-systemjs`
+
+# EXTRA
+## SpecRunner.html example
+
+[C:\Users\v738110\Compass\requirejs-javascript-dependency-injection\7-requirejs-javascript-dependency-injection-m7-exercise-files\After](C:\Users\v738110\Compass\requirejs-javascript-dependency-injection\7-requirejs-javascript-dependency-injection-m7-exercise-files\After)

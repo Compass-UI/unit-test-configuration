@@ -5,7 +5,7 @@ var open = require('gulp-open');
 
 
 gulp.task('jasmine', function() {
-  var filesForTest = ['src/**/*.js', 'spec/**/*_spec.js'];
+  var filesForTest = ['src/**/*.js', 'spec/**/*Spec.js'];
   return gulp.src(filesForTest)
     .pipe(watch(filesForTest))
     .pipe(jasmineBrowser.specRunner())
@@ -16,5 +16,12 @@ gulp.task('open', function(){
   gulp.src('./unit-testing.html')
   .pipe(open());
 });
+
+gulp.task('headless', function() {
+  return gulp.src(['src/**/*.js', 'spec/**/*Spec.js'])
+    .pipe(jasmineBrowser.specRunner({console: true}))
+    .pipe(jasmineBrowser.headless({driver: 'phantomjs'}));
+});
+
 
 gulp.task('test', ['jasmine', 'open']);
